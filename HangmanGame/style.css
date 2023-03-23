@@ -1,0 +1,43 @@
+body {
+  background-color: #ffe8f3;
+  text-align: center;
+}
+
+.correct {
+  background-color: #a7f3a4;
+}
+
+.incorrect {
+  background-color: #f3a7a7;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+#word-container.correct {
+  background-color: #a7f3a4;
+}
+
+#word-container.incorrect {
+  background-color: #f3a7a7;
+}
+
+#win-text {
+  font-size: 4em;
+  transition: transform 1s ease-in-out;
+}
+
+#win-text.rotate {
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
